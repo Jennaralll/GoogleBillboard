@@ -1,18 +1,19 @@
+public final static String e = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059";  
 private String digits;
 private double dNum;
 private double other;
-public final static String e = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059";  
 public void setup()  
 {           
     noLoop();  
 }  
 public void draw()  
 {   
-	for(int i = 0; i < e.length(); i ++){
-		String digits = e.substring(0, 11);
-		double dNum = Double.parseDouble(digits);
-		if(isPrime(dNum)){
-			other + dNum;
+	for(int i = 2; i < e.length() - 10; i ++){
+		String digits = e.substring(i, i + 10);
+		dNum = Double.parseDouble(digits);
+		if(isPrime(dNum) == true){
+			other = dNum;
+			break;
 		} 	
 	}
 	//not needed for this assignment
